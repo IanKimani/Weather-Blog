@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text strong {
+  font-size: x-large;
+  font-family: serif;
+  color: rgb(193, 189, 226);
+  cursor: default;
+  text-shadow: 2px 2px 1px rgb(26, 25, 31);
+}
+
+emp {
+  font-size: 13px;
+  color: rgb(225, 225, 241);
+  cursor: default;
+  text-shadow: 2px 2px rgb(12, 12, 12);
+}
+
+.heading {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 3px 1px rgb(89, 90, 90);
+}
+
+.download kbd {
+  font-size: 10px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.clickme {
+  border: 1;
+  background-color: transparent;
+  color: rgb(7, 7, 7);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.clickme a {
+  color: rgb(41, 43, 41);
+}
+
+.clickme a:hover {
+  color: rgb(56, 58, 92);
+  padding: 0.5px 1px;
+}
+
+/*style the hero-image*/
+@media screen and (max-width: 1400px) {
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/sit.jpeg");
+    height: 93%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(155, 154, 156);
+  font-size: 12px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(190, 171, 202);
+  color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  font-family: serif;
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*style the hero-text*/
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(216, 212, 212);
+}
+
+.hero-text a {
+  color: rgb(13, 12, 14);
+}
+
+.hero-text button {
+  outline: 0;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(246, 247, 234);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: rgb(209, 204, 221);
+}
+
+.content {
+  margin: 5px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row img {
+  width: 100%;
+  height: 40vh;
+}
+
+.shell {
+  color: rgb(2, 0, 128);
+  background-color: rgb(177, 189, 185);
+  max-width: 100%;
+  text-align: center;
+  padding: 2px;
+}

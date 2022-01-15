@@ -1,0 +1,65 @@
+a{
+  color: rgb(245, 184, 240);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(166, 196, 165);
+}
+
+.content {
+  font-size: 15px;
+}
+
+body {
+  background: black;
+  color: white;
+  font-size: 18px;
+}
+  
+  h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(121, 100, 197);
+}
+
+h2 {
+  text-shadow: 2px 2px 2px rgb(113, 103, 150);
+}
+
+.back {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+img {
+  width: 18vh;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.author {
+  display: block;
+  padding: 1.5rem;
+  background-color: rgb(7, 6, 6);
+  text-align: center;
+}
+
+.nav {
+  float: right;
+    padding-right: 5px;
+}
+
+.nav img {
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  margin-left: 3px;
+}
+
+
+
+
+
